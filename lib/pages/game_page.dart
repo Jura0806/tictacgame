@@ -31,7 +31,7 @@ class _GamePageState extends State<GamePage> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: MainColors.primaryColor,
+       backgroundColor: Colors.brown,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -79,7 +79,7 @@ class _GamePageState extends State<GamePage> {
                       style: TextStyle(
                         color: game.board![index] == "X"
                             ? Colors.brown
-                            : Colors.red,
+                            : Colors.limeAccent,
                         fontSize: 60.0
                       ),
                     ),
